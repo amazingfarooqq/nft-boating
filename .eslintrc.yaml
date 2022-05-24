@@ -1,0 +1,23 @@
+env:
+  browser: true
+  node: true
+  es2021: true
+extends:
+  - "eslint:recommended"
+  - "prettier"
+ignorePatterns:
+  - "dist"
+  - "dist-ssr"
+  - "node_modules"
+  - "yarn.lock"
+parserOptions:
+  sourceType: module
+  ecmaFeatures:
+    jsx: true
+root: true
+rules:
+  no-undef: "warn"
+  no-unused-vars: "warn"
+  no-extra-boolean-cast: "off"
+  no-constant-condition: "off"
+  no-async-promise-executor: "off"
